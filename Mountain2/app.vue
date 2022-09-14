@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Mountains</h1>
+    <h1>Mountains - Updated Sept 13</h1>
     <!-- <div
       v-for="mountain of mountainData"
-      class="flex flex-row gap-5 mb-5 bg-blue-300 mx-5 p-5 rounded"
+      class="flex flex-row gap-5 p-5 mx-5 mb-5 bg-blue-300 rounded"
     >
       <div style="width: 30%; margin-top: auto; margin-bottom: auto">
         <img :src="mountain.image" style="width: 100%; height: auto" />
@@ -24,28 +24,28 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <div class="p-4" v-for="mountain of mountainData">
         <div
-          class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+          class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60"
         >
           <img
-            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            class="object-cover object-center w-full lg:h-48 md:h-36"
             :src="mountain.image"
             alt="blog"
           />
           <div class="p-6">
             <h2
-              class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+              class="mb-1 text-xs font-medium tracking-widest text-gray-400 title-font"
             >
               {{ mountain.height }}
             </h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+            <h1 class="mb-3 text-lg font-medium text-gray-900 title-font">
               {{ mountain.title }}
             </h1>
-            <p class="leading-relaxed mb-3">
+            <p class="mb-3 leading-relaxed">
               {{ mountain.description }}
             </p>
-            <div class="flex items-center flex-wrap">
+            <div class="flex flex-wrap items-center">
               <a
-                class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                class="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0"
                 >Learn More
                 <svg
                   class="w-4 h-4 ml-2"
@@ -61,7 +61,7 @@
                 </svg>
               </a>
               <span
-                class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
+                class="inline-flex items-center py-1 pr-3 ml-auto mr-3 text-sm leading-none text-gray-400 border-r-2 border-gray-200 lg:ml-auto md:ml-0"
               >
                 <svg
                   class="w-4 h-4 mr-1"
@@ -77,7 +77,7 @@
                 >1.2K
               </span>
               <span
-                class="text-gray-400 inline-flex items-center leading-none text-sm"
+                class="inline-flex items-center text-sm leading-none text-gray-400"
               >
                 <svg
                   class="w-4 h-4 mr-1"
