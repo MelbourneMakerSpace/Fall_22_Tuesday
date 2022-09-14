@@ -3,17 +3,7 @@
     <h1>Mountains</h1>
     <div
       v-for="mountain of mountainData"
-      style="
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        margin-bottom: 20px;
-        background: whitesmoke;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 10px;
-        border-radius: 10px;
-      "
+      class="flex flex-row gap-5 mb-5 bg-blue-300 mx-5 p-5 rounded"
     >
       <div style="width: 30%; margin-top: auto; margin-bottom: auto">
         <img :src="mountain.image" style="width: 100%; height: auto" />
